@@ -1,0 +1,4 @@
+organism,C.elegans,C.savignyi,D.melanogaster
+C.elegans,1.0,0.337,0.08
+C.savignyi,0.337,1.0,0.617
+D.melanogaster,0.08,0.617,1.0

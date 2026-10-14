@@ -1,0 +1,8 @@
+organism,D.melanogaster,T.nigroviridis,M.lucifugus,F.albicollis,P.marinus,L.oculatus,P.abelii
+D.melanogaster,1.0,0.873,0.278,0.494,0.906,0.849,0.33
+T.nigroviridis,0.873,1.0,0.326,0.535,0.916,0.888,0.391
+M.lucifugus,0.278,0.326,1.0,0.927,0.38,0.552,0.978
+F.albicollis,0.494,0.535,0.927,1.0,0.595,0.75,0.945
+P.marinus,0.906,0.916,0.38,0.595,1.0,0.922,0.438
+L.oculatus,0.849,0.888,0.552,0.75,0.922,1.0,0.617
+P.abelii,0.33,0.391,0.978,0.945,0.438,0.617,1.0

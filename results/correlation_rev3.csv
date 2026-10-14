@@ -1,0 +1,6 @@
+organism,S.cerevisiae,C.savignyi,C.intestinalis,C.elegans,D.melanogaster
+S.cerevisiae,1.0,0.152,0.543,0.748,0.178
+C.savignyi,0.152,1.0,0.366,0.269,0.565
+C.intestinalis,0.543,0.366,1.0,0.497,0.055
+C.elegans,0.748,0.269,0.497,1.0,0.307
+D.melanogaster,0.178,0.565,0.055,0.307,1.0

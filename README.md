@@ -1,120 +1,40 @@
-# codon-composition-model-organisms
 # Comparative Analysis of Codon Composition in Orthologous Genes Across Model Organisms
 
-**Bioinformatics | Codon Usage | Comparative Genomics | Phylogenetic Analysis**
+## Project overview
+This repository presents selected results from the 2020 master's dissertation *Comparative Analysis of Codon Composition in Orthologous Genes Across Model Organisms* (Xədicə Müşfiq qızı Bayramova, Institute of Genetic Resources, Azerbaijan National Academy of Sciences).
 
-## Overview
+The dissertation compares codon profiles of 14 genes and their reported orthologs across multiple organisms. Analyses described in the thesis include relative synonymous codon usage (RSCU), pairwise codon-profile correlations, and comparisons of GC3% and AT3%.
 
-This repository presents a completed dissertation research project investigating codon composition and usage patterns in orthologous genes across seven model organisms.
+## Included results
+- `results/rscu_values_long.csv`: RSCU values recovered from the embedded data of the 14 RSCU charts in the Word dissertation.
+- `results/correlation_*.csv`: correlation matrices transcribed from dissertation tables.
+- `results/correlation_summary_by_gene.csv`: minimum, maximum and mean pairwise correlations calculated from the extracted correlation matrices.
+- `figures/stat3_rscu_heatmap.png`: heatmap of STAT3 ortholog RSCU values from the dissertation chart.
+- `figures/stat3_correlation_heatmap.png`: STAT3 codon-profile correlation matrix from the dissertation table.
+- `figures/correlation_ranges_by_gene.png`: range summary calculated from the extracted pairwise correlations.
 
-The study examines codon usage characteristics, nucleotide composition at the third codon position, and similarities between codon profiles across selected genes and organisms. Comparative analyses were performed using relative synonymous codon usage (RSCU), codon adaptation index (CAI), GC3%, AT3%, correlation analysis, and UPGMA-based phylogenetic tree construction.
+## Main findings reported in the dissertation
+The dissertation's conclusion states that orthologs from genetically closer species generally showed higher codon-profile correlations, while more distant species showed lower or sometimes negative correlations. The thesis also reports that closely related species tended to show more similar RSCU patterns, and that most of the studied orthologs favored optimal codons with a higher GC content at the third codon position (GC3%) than AT content (AT3%).
 
-## Research Objectives
+These are summaries of the thesis's stated conclusions, not a new independent re-analysis of the underlying sequences.
 
-- To characterize codon usage patterns in selected orthologous genes.
-- To calculate and compare RSCU and CAI values.
-- To investigate GC3% and AT3% composition across the studied genes.
-- To evaluate similarities between codon profiles using correlation analysis.
-- To construct a phylogenetic tree based on codon composition profiles using the UPGMA method.
+## Methods and source
+The dissertation reports sequence retrieval from NCBI/Ensembl, codon profile extraction, correlation analysis, RSCU calculation using CAIcal, and comparisons prepared in Excel. Correlation matrices and RSCU chart series in this repository were extracted from the supplied DOCX file.
 
-## Model Organisms
+## Important data limitations
+- The supplied dissertation file contains embedded RSCU chart data and correlation tables, which are included here.
+- A standalone table of numerical CAI results was not identified in the inspected document. CAI is described in the methods, but no CAI result file is included.
+- A clearly documented, study-specific UPGMA tree/result was not identified in the inspected document. No tree is fabricated here.
+- GC3%/AT3% conclusions are stated in the thesis, but a complete numerical GC3%/AT3% dataset was not identified in the extracted tables/charts. A corresponding numerical CSV/figure should be added only if the original values can be recovered from the dissertation's figures/appendices or source spreadsheets.
+- Correlation coefficients are reported as present in the thesis tables; this repository does not independently verify the original sequence selection, orthology assignments, or statistical significance.
 
-The study includes the following seven organisms:
-
-| Scientific name | Common name |
-|---|---|
-| *Drosophila melanogaster* | Fruit fly |
-| *Arabidopsis thaliana* | Thale cress |
-| *Mus musculus* | House mouse |
-| *Caenorhabditis elegans* | Nematode |
-| *Saccharomyces cerevisiae* | Baker's yeast |
-| *Tursiops truncatus* | Common bottlenose dolphin |
-| *Homo sapiens* | Human |
-
-## Genes and Orthologous Groups
-
-The research investigates codon profiles in the following gene pairs or groups identified in the dissertation:
-
-- NOTCH2NLA and ZEB2
-- Kit and Stat3
-- GATA2 and HOXC4
-- khc and tp53
-- daf-16 and rad-51
-- FLC and TAA1
-- SPT15 and REV3
-
-Gene symbols are presented in a standardized form where possible. Their species-specific identifiers and orthology assignments should be documented alongside the corresponding data.
-
-## Methodology
-
-### 1. Relative Synonymous Codon Usage (RSCU)
-
-RSCU values were calculated to characterize the relative frequency of synonymous codons encoding the same amino acid.
-
-### 2. Codon Adaptation Index (CAI)
-
-CAI values were calculated using a CAI calculator to assess codon usage relative to a reference codon-usage pattern.
-
-### 3. GC3% and AT3% Analysis
-
-The nucleotide composition at the third codon position was analyzed by comparing GC3% and AT3% across the selected genes and organisms.
-
-### 4. Correlation Analysis
-
-Correlation analyses were performed using codon composition profiles to evaluate similarities and relationships between the studied genes and organisms.
-
-### 5. UPGMA Phylogenetic Analysis
-
-A phylogenetic tree was constructed using the Unweighted Pair Group Method with Arithmetic Mean (UPGMA), based on codon profile data.
-
-## Tools and Software
-
-- **Microsoft Excel:** Data organization, calculations, comparative analysis, and correlation analysis.
-- **RSCU calculator:** Calculation of relative synonymous codon usage.
-- **CAI calculator:** Calculation of the codon adaptation index.
-- **UPGMA tree-building tool:** Construction of a phylogenetic tree from the analyzed profiles.
-
-The specific names and versions of the online tools can be added when available.
-
-## Key Research Components
-
-- Comparative codon usage analysis.
-- RSCU and CAI assessment.
-- GC3% and AT3% comparison.
-- Correlation analysis of codon profiles.
-- UPGMA-based clustering and phylogenetic visualization.
-
-## Repository Structure
-
+## Repository structure
 ```text
-orthologous-gene-codon-composition/
-├── README.md
-├── data/
-│   └── README.md
-├── results/
-│   └── README.md
-├── figures/
-│   └── README.md
-└── docs/
-    └── methodology.md
+data/       # Source-data notes
+results/    # Extracted numerical tables
+figures/    # Visualizations from extracted thesis data
+docs/       # Methods and provenance notes
 ```
 
-This structure provides an initial framework for organizing the research data, results, figures, and methodological documentation. Files should be added as they become available.
-
-## Reproducibility and Data Availability
-
-The analyses were conducted primarily using Microsoft Excel and dedicated bioinformatics calculators and tree-building tools.
-
-Input data, calculated values, output tables, figures, and tool references will be documented where available and permitted for sharing. The repository structure can be expanded to include computational scripts and reproducible workflows if these are developed.
-
-## Research Status
-
-**Status:** Dissertation completed and successfully defended.
-
-This repository documents the research design, analytical approaches, and results of the dissertation project.
-
-## Author
-
-Khadija B.Amanova
-
-Research interests: Bioinformatics, comparative genomics, codon usage, evolutionary analysis, and computational biology.
+## Reproducibility note
+The figures were generated from values embedded in the supplied Word document. No raw FASTA sequences, full analysis scripts, or original Excel workbooks were included with this DOCX. Therefore, this is a transparent presentation of thesis results, not a fully reproducible end-to-end bioinformatics pipeline.
